@@ -1,0 +1,17 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:one": "jest -i A1.test.js",
+    "test:two": "jest -i A2.test.js",
+    "test:three": "jest -i A3.test.js"
+  },
+  "keywords": [],
+  "author": "Diego <diegoa.velascoc@gmail.com> (https://mywebchat.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.0.6"
+  }
+}
