@@ -26,6 +26,6 @@ const print10times10times = () => {
     print10times();
     print10times();
     print10times();
+    i = 0;
 }
-
 module.exports = print10times10times;

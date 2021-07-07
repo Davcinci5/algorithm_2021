@@ -1,14 +1,14 @@
 // Maximum value of an array without using loops
 const maxValueFunction = (array) =>{
-    const recursiveFunction = (values,initial = 0) => {
-        if(values.length === 0) return initial;
-        const actualValue = values.pop();
+    const recursiveFunction = (index = 0,initial = 0) => {
+        if(index === array.length) return initial;
+        const actualValue = array[index];
         if(actualValue > initial){
             initial = actualValue;
         }
-        return recursiveFunction(values, initial);
+        return recursiveFunction(++index, initial);
     }
-    const maxValue = recursiveFunction(array);
+    const maxValue = recursiveFunction();
     return maxValue;
 }
 
