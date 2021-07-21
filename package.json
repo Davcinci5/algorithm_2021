@@ -14,7 +14,9 @@
     "test:eight": "jest -i A8.test.js",
     "test:nine": "jest -i A9.test.js",
     "test:ten": "jest -i A10.test.js",
-    "test:eleven": "jest -i A11.test.js"
+    "test:eleven": "jest -i A11.test.js",
+    "test:twelve": "jest -i A12.test.js",
+    "test:thirdteen": "jest -i A13.test.js"
   },
   "keywords": [],
   "author": "Diego <diegoa.velascoc@gmail.com> (https://mywebchat.com/)",
