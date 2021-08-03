@@ -50,5 +50,20 @@ test('find the routes from array[0][0] to array[2][3]',()=>{
             [ 4, 6, 8, 10, 9, 11, 13 ],
             [ 4, 6, 8, 10, 12, 11, 13 ],
             [ 4, 6, 8, 10, 12, 14, 13 ] ])
-    })
+    });
+
+    test(`Ivan's found bug`,()=>{
+        let array = [
+            [0,0,0],
+            [0,0,0],
+            [0,0,0],
+        ];
+        let possibles = traverseArray(array,0,0,2,2);
+        expect(possibles).toEqual([[ 0, 0, 0, 0, 0 ],
+            [ 0, 0, 0, 0, 0 ],
+            [ 0, 0, 0, 0, 0 ],
+            [ 0, 0, 0, 0, 0 ],
+            [ 0, 0, 0, 0, 0 ],
+            [ 0, 0, 0, 0, 0 ] ]);
+    });
 

@@ -13,7 +13,8 @@ function flatten_recursive(array,i = 0, newArray =[]) {
     return flatten_recursive(array,i + 1, newArray)
 }
 
-function flatten_iterative(input,newArray = []){
+function flatten_iterative(input){
+    const newArray = [];
     let i = 0,
         actual_array = input,
         previous_indexandArray = [];

@@ -2,26 +2,33 @@
 
 const setZeros = (matrix) => {
 
-function changeToZero(col,row){
-    for (let i = 0; i < matrix.length; i++) {
-        matrix[i][row] = 0
+    const column = new Set();
+    const rows = new Set();
+
+function changeToZero(){ //O(a*b)??
+    for (let col of column){
+        for (let i = 0; i < matrix[col].length; i++) {  
+            matrix[col][i] = 0
+        }
     }
-    for (let i = 0; i < matrix[col].length; i++) {
-        matrix[col][i] = 0
-    }
+    for(row of rows) {
+        for (let i = 0; i < matrix.length; i++) {
+            matrix[i][row] = 0
+        }
+    }    
 }
 
-let stack = [];
 for (let col = 0; col < matrix.length; col++) {
     for (let row = 0; row < matrix[col].length; row++){
-        if(matrix[col][row] === 0) stack.push([col,row])
+        if(matrix[col][row] === 0) {
+            column.add(col);
+            rows.add(row);
+        } 
     }
 }
 
-while(stack.length > 0){
-    let element = stack.pop();
-    changeToZero(...element);
-}
+changeToZero();
+
 }
 
 module.exports = setZeros;

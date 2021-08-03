@@ -8,7 +8,7 @@ function traverseArray(array,startX,startY,xe,ye){
     const search = (xs,ys,storage = []) => {
         if(xs > col || ys > row) return;
         storage.push(array[xs][ys]);
-        if(array[xs][ys]===array[xe][ye]){
+        if(array[xs][ys]===array[xe][ye] && xs === xe && ys === ye){
             possible.push(storage);
             return;
         }
@@ -18,5 +18,6 @@ function traverseArray(array,startX,startY,xe,ye){
     search(startX,startY);
     return possible;
 }
+
 
 module.exports = traverseArray;
