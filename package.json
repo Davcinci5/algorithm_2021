@@ -18,7 +18,8 @@
     "test:twelve": "jest -i A12.test.js",
     "test:thirdteen": "jest -i A13.test.js",
     "test:fourteen": "jest -i A14.test.js",
-    "test:fifteen": "jest -i A15.test.js"
+    "test:fifteen": "jest -i A15.test.js",
+    "test:sixteen": "jest -i A16.test.js"
   },
   "keywords": [],
   "author": "Diego <diegoa.velascoc@gmail.com> (https://mywebchat.com/)",
