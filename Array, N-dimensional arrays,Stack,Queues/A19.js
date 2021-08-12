@@ -1,11 +1,19 @@
 //Determine if a series of parenthesis are balanced, and if not, how many parenthesis are missing.
-
+//O(n)
 const missingParenthesis = (serie) => {
-    let index = counter = 0,value;
-    while(serie[index]){
-        value = serie[index] ==='(' ? 1 : -1;
-        counter += value;
-        index++;
+let counterLeft = counterRight = 0;
+for (let i = 0; i <serie.length; i++) {
+    if(serie[i] === '('){
+        counterLeft++;
+    }else{
+        if(counterLeft > 0) {
+            counterLeft--;
+        }else{
+            counterRight++;
+        }
     }
-    return Math.abs(counter);
+}
+return counterLeft + counterRight;
 };
+
+module.exports = missingParenthesis;
