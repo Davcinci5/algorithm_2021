@@ -24,7 +24,9 @@
     "test:eighteen": "jest -i A18.test.js",
     "test:nineteen": "jest -i A19.test.js",
     "test:twenty": "jest -i A20.test.js",
-    "test:A21": "jest -i A21.test.js"
+    "test:A21": "jest -i A21.test.js",
+    "test:A22": "jest -i A22.test.js",
+    "test:A23": "jest -i A23.test.js"
   },
   "keywords": [],
   "author": "Diego <diegoa.velascoc@gmail.com> (https://mywebchat.com/)",
